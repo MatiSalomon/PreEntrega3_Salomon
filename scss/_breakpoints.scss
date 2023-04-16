@@ -75,6 +75,7 @@
                 }
            }
             section{
+                @include flex(center);
                 img{
                     width: 150px;
                     height: auto;
@@ -568,7 +569,7 @@
             section{
                 img{
                     width: 250px;
-                    height: 250px;
+                    height: auto;
                     margin-left: 5px;
                 }
                 h2{
@@ -580,12 +581,29 @@
                 }
             }
             article{
+                overflow: hidden;
                 h2{
                     border: solid 2px $primaryColor;
                     &:hover{
                         background-color:$primaryColor;
                         color: $secondaryColor;
                     }
+                }
+                h3{
+                    font-size: $textSm;
+                    font-weight: $textBolt;
+                }
+                img{
+                    width: 70%;
+                    margin-left: 30px
+                }
+                p{
+                    text-align: center;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    font-weight: $textLight;
                 }
             }
             .video-display{
@@ -656,12 +674,12 @@
                 }
             }
             aside{
-                @include flex(center)
+                @include flex(center);
             }
             .noticia5{
                 img{
                     width: 30%;
-                    height: auto
+                    height: auto;
                 }
             }
             .torneo-ofi{
@@ -678,6 +696,22 @@
                         background-color: $primaryColor;
                         color:$secondaryColor;
                     }
+                }
+                img{
+                    width: 70%;
+                    margin-left: 30px
+                }
+                h3{
+                    font-size: $textSm;
+                    font-weight: $textBolt;
+                }
+                p{
+                    text-align: center;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 4;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    font-weight: $textLight;
                 }
             }
             .bg-aside{
@@ -728,7 +762,8 @@
                     height: auto
                 }
             }
-            article{   
+            article{ 
+                overflow: hidden;  
                 h2 {
                     border: solid 2px $primaryColor;
                     &:hover{
@@ -803,6 +838,10 @@
         -webkit-text-stroke: 1px $secondaryColor;
         color: $colorletter;
         font-size: $textLg;
+        text-shadow: 1px 1px 2px $secondaryColor, 0 0 1em $secondaryColor, 0 0 0.2em $secondaryColor;
+    }
+    .sombra{
+        text-shadow: 1px 1px 2px $secondaryColor, 0 0 1em $secondaryColor, 0 0 0.2em $secondaryColor;
     }
         /* END Pagina Local */
         /* end MQ Desktop */

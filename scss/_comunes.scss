@@ -8,9 +8,11 @@ body{
 }
 /* INICIO HEADER */
 header{
-    background-color: rgb(65, 65, 65);
-    color: $colorletter;
+    // background-color: rgb(65, 65, 65);
+    color: $secondaryColor;
     width: $width;
+    background: $secondaryColor;
+    background: linear-gradient(0deg, $secondaryColor 0%, rgba(121,112,9,1) 51%, $primaryColor 100%);
     img{
         display: block;
         margin: auto;

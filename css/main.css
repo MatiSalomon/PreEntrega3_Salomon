@@ -11,9 +11,10 @@ body {
 
 /* INICIO HEADER */
 header {
-  background-color: rgb(65, 65, 65);
-  color: white;
+  color: black;
   width: 100%;
+  background: black;
+  background: linear-gradient(0deg, black 0%, rgb(121, 112, 9) 51%, gold 100%);
 }
 header img {
   display: block;
@@ -252,7 +253,17 @@ footer h3 {
     display: grid;
     grid-template-columns: 100vw;
     grid-template-rows: repeat(9, 40vh);
-    grid-template-areas: "noti1" "noti2" "noti3" "noti4" "aside1" "aside2" "aside3" "aside4" "aside-v" "googleCalendar";
+    grid-template-areas: 
+    "noti1" 
+    "noti2" 
+    "noti3" 
+    "noti4" 
+    "aside1" 
+    "aside2" 
+    "aside3" 
+    "aside4" 
+    "aside-v" 
+    "googleCalendar";
     box-sizing: border-box;
     justify-content: center;
     gap: 10px;
@@ -266,6 +277,10 @@ footer h3 {
   }
   .main-grid article .video-display {
     margin-top: 0;
+  }
+  .main-grid section {
+    display: flex;
+    flex-direction: center;
   }
   .main-grid section img {
     width: 150px;
@@ -709,7 +724,7 @@ footer h3 {
   }
   .main-grid section img {
     width: 250px;
-    height: 250px;
+    height: auto;
     margin-left: 5px;
   }
   .main-grid section h2 {
@@ -719,12 +734,31 @@ footer h3 {
   .main-grid section p {
     margin-left: 5px;
   }
+  .main-grid article {
+    overflow: hidden;
+  }
   .main-grid article h2 {
     border: solid 2px gold;
   }
   .main-grid article h2:hover {
     background-color: gold;
     color: black;
+  }
+  .main-grid article h3 {
+    font-size: 1em;
+    font-weight: 900;
+  }
+  .main-grid article img {
+    width: 70%;
+    margin-left: 30px;
+  }
+  .main-grid article p {
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-weight: 400;
   }
   .main-grid .video-display {
     display: flex;
@@ -810,6 +844,22 @@ footer h3 {
     background-color: gold;
     color: black;
   }
+  .local-grid article img {
+    width: 70%;
+    margin-left: 30px;
+  }
+  .local-grid article h3 {
+    font-size: 1em;
+    font-weight: 900;
+  }
+  .local-grid article p {
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-weight: 400;
+  }
   .local-grid .bg-aside {
     background-color: rgb(58, 58, 58);
   }
@@ -852,6 +902,9 @@ footer h3 {
   .local-grid .noticia5 img {
     width: 30%;
     height: auto;
+  }
+  .local-grid article {
+    overflow: hidden;
   }
   .local-grid article h2 {
     border: solid 2px gold;
@@ -929,6 +982,11 @@ footer h3 {
   -webkit-text-stroke: 1px black;
   color: white;
   font-size: 2.3em;
+  text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+.sombra {
+  text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
 }
 
 /* END Pagina Local */
