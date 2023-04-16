@@ -1,9 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,900&display=swap");
-.noticia1 {
-  width: 100%;
-  overflow: hidden;
-}
-
 * {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
@@ -56,8 +51,7 @@ main {
   background-color: #363636;
   margin-bottom: 10px;
 }
-
-.others-d img {
+.others-d img img {
   width: 200px;
   height: auto;
 }
@@ -198,6 +192,53 @@ footer h3 {
 }
 
 /* END FOOTER */
+/* inicio asignacion de area */
+.noticia1 {
+  grid-area: noti1;
+  display: flex;
+  align-items: center;
+}
+
+.noticia2 {
+  grid-area: noti2;
+  display: flex;
+  align-items: center;
+}
+
+.noticia3 {
+  grid-area: noti3;
+  display: flex;
+  align-items: center;
+}
+
+.noticia4 {
+  grid-area: noti4;
+  display: flex;
+  align-items: center;
+}
+
+.noticia5 {
+  grid-area: noti5;
+  display: flex;
+  align-items: center;
+}
+
+.local-grid .aside1 {
+  grid-area: aside1;
+}
+.local-grid .aside2 {
+  grid-area: aside2;
+}
+.local-grid .aside3 {
+  grid-area: aside3;
+}
+.local-grid .aside4 {
+  grid-area: aside4;
+}
+.local-grid .aside-v {
+  grid-area: aside-v;
+}
+
 /*  Breakpoint MQ en Mobile */
 /* Pagina principal */
 @media (min-width: 290px) and (max-width: 580px) {
@@ -239,11 +280,40 @@ footer h3 {
   .main-grid .w-70 {
     width: 100vw;
   }
-  .main-grid nav img {
-    width: 20vw;
-  }
   .main-grid .googleCalendar {
     overflow: hidden;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 50%;
+  }
+  .main-grid .googleCalendar iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .main-grid .video-display {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 10px;
+  }
+  .main-grid .noticia1 {
+    flex-direction: column;
+  }
+  .main-grid .noticia2 {
+    flex-direction: column;
+  }
+  .main-grid .noticia3 {
+    flex-direction: column;
+  }
+  .main-grid .noticia4 {
+    flex-direction: column;
+  }
+  nav img {
+    width: 20vw;
   }
   .border-video {
     width: 100vw;
@@ -315,25 +385,11 @@ footer h3 {
     width: 95vw;
     text-align: center;
   }
+  aside h4 {
+    font-size: 1.4em;
+  }
   .aside-noti {
     width: 100vw;
-  }
-  aside h4 {
-    font-size: 1.3em;
-  }
-  .googleCalendar {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    padding-bottom: 50%;
-    overflow: hidden;
-  }
-  .googleCalendar iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
   }
   footer {
     width: 100vw;
@@ -343,24 +399,6 @@ footer h3 {
   }
   footer .logo-footer {
     display: none;
-  }
-  .noticia1 {
-    flex-direction: column;
-  }
-  .noticia2 {
-    flex-direction: column;
-  }
-  .noticia3 {
-    flex-direction: column;
-  }
-  .noticia4 {
-    flex-direction: column;
-  }
-  .main-grid .video-display {
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
-    margin-bottom: 10px;
   }
   /* END Pagina Principal */
   /* Pagina Local */
@@ -373,22 +411,41 @@ footer h3 {
     justify-content: center;
     gap: 5px;
   }
+  .local-grid section {
+    margin-bottom: 5px;
+  }
   .local-grid section img {
     width: 150px;
     height: auto;
+  }
+  .local-grid article {
+    background-color: rgb(70, 70, 70);
+    margin-bottom: 5px;
+  }
+  .local-grid p {
+    text-align: center;
+  }
+  .local-grid .noticia1 {
+    width: 100%;
+    overflow: hidden;
+  }
+  .local-grid .noticia2 {
+    width: 100%;
+    overflow: hidden;
+  }
+  .local-grid .noticia3 {
+    width: 100%;
+    overflow: hidden;
+  }
+  .local-grid .noticia4 {
+    width: 100%;
+    overflow: hidden;
   }
   .torneo-ofi {
     text-align: center;
   }
   .border-h2 {
     border: solid 2px gold;
-  }
-  .local-grid section {
-    margin-bottom: 5px;
-  }
-  .local-grid article {
-    background-color: rgb(70, 70, 70);
-    margin-bottom: 5px;
   }
   .text-line {
     text-decoration: underline;
@@ -404,22 +461,22 @@ footer h3 {
     justify-content: center;
     gap: 5px;
   }
+  .inter-grid section {
+    margin-bottom: 5px;
+  }
   .inter-grid section img {
     width: 150px;
     height: auto;
+  }
+  .inter-grid article {
+    background-color: rgb(70, 70, 70);
+    margin-bottom: 5px;
   }
   .torneo-ofi {
     text-align: center;
   }
   .border-h2 {
     border: solid 2px gold;
-  }
-  .inter-grid section {
-    margin-bottom: 5px;
-  }
-  .inter-grid article {
-    background-color: rgb(70, 70, 70);
-    margin-bottom: 5px;
   }
   .text-line {
     text-decoration: underline;
@@ -441,9 +498,17 @@ footer h3 {
   .contacto-grid article {
     background-color: rgb(70, 70, 70);
     margin-bottom: 5px;
+    display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
+  }
+  .contacto-grid article img {
+    margin-left: 20%;
+    margin-top: 10px;
+  }
+  .contacto-grid article p {
+    text-align: center;
   }
   .contacto-grid .form-register {
     width: 90%;
@@ -460,11 +525,7 @@ footer h3 {
   }
   .otros-dep {
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  .contacto-grid article img {
-    margin-left: 20%;
+    flex-direction: center;
     margin-top: 10px;
   }
 }
@@ -479,8 +540,65 @@ footer h3 {
     grid-template-areas: "noti1 noti2 noti3" "noti1 noti2 noti3" "noti4 noti5 aside1" "noti4 noti5 aside2" "aside-v aside-v aside3" "aside-v aside-v googleCalendar";
     gap: 10px;
   }
-  .main-grid section, article {
+  .main-grid section {
     border: solid 2px rgb(82, 81, 67);
+  }
+  .main-grid article {
+    border: solid 2px rgb(82, 81, 67);
+  }
+  .main-grid .aside1 {
+    grid-area: aside1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-grid .aside1 img {
+    width: 50%;
+    height: 100px;
+  }
+  .main-grid .aside2 {
+    grid-area: aside2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-grid .aside2 img {
+    width: 50%;
+    height: 100px;
+  }
+  .main-grid .aside3 {
+    grid-area: aside3;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-grid .aside3 img {
+    width: 50%;
+    height: auto;
+  }
+  .main-grid .aside4 {
+    grid-area: aside4;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-grid .aside4 img {
+    width: 100px;
+    height: 100px;
+  }
+  .main-grid .aside-v {
+    grid-area: aside-v;
+  }
+  .main-grid article h2 {
+    border: solid 2px gold;
+    text-align: center;
+  }
+  .main-grid article h2:hover {
+    background-color: gold;
+    color: black;
+  }
+  .main-grid article p {
+    text-align: center;
   }
   .noticia1 {
     width: 100%;
@@ -527,69 +645,8 @@ footer h3 {
     width: 200px;
     height: 200px;
   }
-  .main-grid .aside1 {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .main-grid .aside1 img {
-    width: 50%;
-    height: 100px;
-  }
-  .main-grid .aside2 {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .main-grid .aside2 img {
-    width: 50%;
-    height: 100px;
-  }
-  .main-grid .aside3 {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .main-grid .aside3 img {
-    width: 50%;
-    height: auto;
-  }
-  .main-grid .aside4 {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .main-grid .aside4 img {
-    width: 100px;
-    height: 100px;
-  }
   main h2 {
     text-align: center;
-  }
-  .main-grid article h2 {
-    border: solid 2px gold;
-  }
-  .main-grid article h2:hover {
-    background-color: gold;
-    color: black;
-  }
-  .main-grid article h2, p {
-    text-align: center;
-  }
-  .main-grid .aside1 {
-    grid-area: aside1;
-  }
-  .main-grid .aside2 {
-    grid-area: aside2;
-  }
-  .main-grid .aside3 {
-    grid-area: aside3;
-  }
-  .main-grid .aside4 {
-    grid-area: aside4;
-  }
-  .main-grid .aside-v {
-    grid-area: aside-v;
   }
   /* END Pagina principal */
   /* GRID Pagina Local */
@@ -612,10 +669,10 @@ footer h3 {
     color: black;
   }
   .contacto-grid .iframe-map {
-    flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
   .contacto-grid .section-img {
     margin-top: 10px;

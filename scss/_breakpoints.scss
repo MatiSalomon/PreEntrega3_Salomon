@@ -1,3 +1,45 @@
+ /* inicio asignacion de area */
+ .noticia1{
+    grid-area: noti1;
+    display: flex;
+    align-items: center;
+}
+.noticia2{
+    grid-area: noti2;
+   @include align (center)
+}
+.noticia3{
+    grid-area: noti3;
+    @include align (center)
+}
+.noticia4{
+    grid-area: noti4;
+    @include align (center)
+}
+.noticia5{
+    grid-area: noti5;
+    @include align (center)
+}
+.local-grid{
+    .aside1 {
+        grid-area: aside1;
+    }
+    .aside2{
+        grid-area: aside2;
+    }
+    .aside3{
+        grid-area: aside3;
+    }
+    .aside4{
+        grid-area: aside4;
+    }
+    .aside-v{
+        grid-area: aside-v;
+    }
+} 
+
+
+
 /*  Breakpoint MQ en Mobile */
     /* Pagina principal */
     @media (min-width:290px) and (max-width:580px){
@@ -54,137 +96,127 @@
             width: 100vw;
         }
     
+
+        .googleCalendar{
+            overflow: hidden;
+            position: relative;
+            height: $heigth;
+            width: $width;
+            padding-bottom: 50%;
+                iframe{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: $width;
+                    height: $heigth;
+                }
+        }
+        .video-display{
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+            margin-bottom: 10px;
+        }
+        .noticia1{
+            flex-direction: column;
+        }
+        .noticia2{
+            flex-direction: column;
+        }
+        .noticia3{
+            flex-direction: column;
+        }
+        .noticia4{
+            flex-direction: column;
+        }
+        }
+
+
         nav img{
             width: 20vw;
         }
-        .googleCalendar{
-            overflow: hidden;
-           }
-        }
-        .border-video{
-            width: 100vw;
-            border: none;
-        }
+            .border-video{
+                width: 100vw;
+                border: none;
+            }
         
-        .noticia5{
-            display: none;
-        }
-        .img-aside{
-            display: flex;
-            justify-content: center;
-        }
-       .torneo-ofi{
-            text-align: center;
-           }
-
+            .noticia5{
+                display: none;
+            }
+            .img-aside{
+                display: flex;
+                justify-content: center;
+            }
+            .torneo-ofi{
+                text-align: center;
+            }
         .noticia1{
-            width: $width;
-            overflow: hidden;
+            @include overflow($width,hidden);
         }
         .noticia2{
-            width: $width;
-            overflow: hidden;
+            @include overflow($width,hidden)
         }
         .noticia3{
-            width: $width;
-            overflow: hidden;
+            @include overflow($width,hidden)
         }
         .noticia4{
-            width: $width;
-            overflow: hidden;
+            @include overflow($width,hidden)
         }
         .aside1{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        .aside1 img{
-            width: 50%;
-            height: auto;
+            width: $width;
+            @include flex(column);
+            img{
+                width: $widthmid;
+                height: auto;
+            }
         }
         .aside2{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        .aside2 img{
-            width: 50%;
-            height: auto;
+            width: $width;
+            @include flex(column);
+            img{
+                width: $widthmid;
+                height: auto;
+            }
         }
         .aside3{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        .aside3 img{
-            width: 50%;
-            height: auto;
+            width: $width;
+            @include flex(column);
+            img{
+                width: $widthmid;
+                height: auto;
+            }
         }
         .aside4{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
+            width: $width;
+            @include flex(column);
+            img{
+                width: $widthmid;
+                height: auto;
+            }
         }
-        .aside4 img{
-            width: 50%;
-            height: auto;
-        }
-
     
-     aside p{
-       width: 95vw;
-       text-align: center;
-    
-     }
+        aside{
+            p{
+                width: 95vw;
+                text-align: center;
+            }
+            h4{
+                font-size: $textMd;
+            }
+        } 
         .aside-noti{
         width: 100vw;
         }
-        aside h4{
-            font-size: 1.3em;
-        }
-         
-     .googleCalendar{
-        position: relative;
-        height: 100%;
-        width: 100%;
-        padding-bottom: 50%;
-        overflow: hidden;
-        iframe{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: $width;
-            height: 100%;
-        }
-        }
-     footer{
-        width: 100vw;
-        h3{
+
+        footer{
+            width: 100vw;
+            h3{
             width: 95vw;
-        }
-        .logo-footer{
+            }
+            .logo-footer{
             display: none;
+            }
         }
-    }
-    .noticia1{
-        flex-direction: column;
-    }
-    .noticia2{
-        flex-direction: column;
-    }
-    .noticia3{
-        flex-direction: column;
-    }
-    .noticia4{
-        flex-direction: column;
-    }
-    .main-grid .video-display{
-        display: flex;
-        justify-content: center;
-        margin-top: 60px;
-        margin-bottom: 10px;
-    }
-    
         /* END Pagina Principal */
     
         /* Pagina Local */
@@ -205,23 +237,41 @@
         box-sizing: border-box;
         justify-content: center;
         gap: 5px;
-       }
-       .local-grid section img{
-        width: 150px;
-        height: auto;
-       }
+
+        section{
+            margin-bottom: 5px;
+            img{
+                width: 150px;
+                height: auto;
+            }
+        } 
+        article{
+        background-color: rgb(70, 70, 70);
+        margin-bottom: 5px;
+        }
+        p{
+            text-align: center;
+        }
+        .noticia1{
+            @include overflow($width,hidden);
+            
+        }
+        .noticia2{
+            @include overflow($width,hidden)
+        }
+        .noticia3{
+            @include overflow($width,hidden)
+        }
+        .noticia4{
+            @include overflow($width,hidden)
+        }
+    }
+
        .torneo-ofi{
         text-align: center;
        }
         .border-h2{
-        border: solid 2px gold;
-       }
-       .local-grid section{
-        margin-bottom: 5px;
-       }
-       .local-grid article{
-       background-color: rgb(70, 70, 70);
-        margin-bottom: 5px;
+        border: solid 2px $primaryColor;
        }
        .text-line{
         text-decoration: underline;
@@ -247,28 +297,28 @@
         justify-content: center;
         gap: 5px;
        }
-       .inter-grid section img{
-        width: 150px;
-        height: auto;
-       }
+       .inter-grid{
+            section{
+                margin-bottom: 5px;
+                img{
+                    width: 150px;
+                    height: auto;
+                }
+            }
+            article{
+                background-color: rgb(70, 70, 70);
+                margin-bottom: 5px;
+            }
+        }  
        .torneo-ofi{
         text-align: center;
        }
         .border-h2{
-        border: solid 2px gold;
-       }
-       .inter-grid section{
-        margin-bottom: 5px;
-       }
-       .inter-grid article{
-       background-color: rgb(70, 70, 70);
-        margin-bottom: 5px;
+        border: solid 2px $primaryColor;
        }
        .text-line{
         text-decoration: underline;
        }
-    
-    
        .contacto-grid{
         display: grid;
         grid-template-columns: 100vw;
@@ -284,44 +334,44 @@
         justify-content: center;
         gap: 5px;
         row-gap: 30px;
-       }
-       .contacto-grid section{
-        margin-bottom: 5px;
-        height: 100%;
-       }
-       .contacto-grid article{
-       background-color: rgb(70, 70, 70);
-        margin-bottom: 5px;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-       }
-       .contacto-grid .form-register{
-        width: 90%;
-       }
-       .contacto-grid .iframe-map{
-        display: block;
-        justify-content: center;
-        width: 100%;
-          margin-bottom: 40px;
-       }
-       .contacto-grid .iframe-map iframe{
-        width: 100%;
-        height: 100%;
-     
-       }
+            section{
+                margin-bottom: 5px;
+                height: 100%;
+            }
+            article{
+                background-color: rgb(70, 70, 70);
+                margin-bottom: 5px;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+                img{
+                    margin-left: 20% ;
+                    margin-top: 10px;
+                }
+                p{
+                    text-align: center;
+                }
+            }
+            .form-register{
+                width: 90%;
+            }
+            .iframe-map{
+                display: block;
+                justify-content: center;
+                width: 100%;
+                margin-bottom: 40px;
+                iframe{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
        .otros-dep{
-        display: flex;
-        justify-content: center;
+        @include flex(center);
         margin-top: 10px;
        }
-       .contacto-grid article img{
-        margin-left: 20% ;
-        margin-top: 10px;
-       }
-    
     } 
-     
         /* end MQ en Mobile */
     
         /* 2do Breakpoint Incio MD para Tablet */
@@ -339,120 +389,109 @@
             "aside-v aside-v aside3"
             "aside-v aside-v googleCalendar";
             gap: 10px;
+            section{
+                border: solid 2px rgb(82, 81, 67);
+            } 
+            article{
+                border: solid 2px rgb(82, 81, 67);
+            }
+            .aside1{
+                grid-area: aside1;
+                width: $width;
+                @include flex(column);
+                img{
+                    width: $widthmid;
+                    height: 100px;
+                }
+            }
+            .aside2{
+                grid-area: aside2;
+                width: $width;
+                @include flex(column);
+                img{
+                    width: $widthmid;
+                    height: 100px;
+                }
+            }
+            .aside3{
+                grid-area: aside3;
+                width: $width;
+                @include flex(column);
+                img{
+                    width: $widthmid;
+                    height: auto;
+                }
+            }
+            .aside4{
+                grid-area: aside4;
+                width: $width;
+                @include flex(column);
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+            .aside-v{
+                grid-area: aside-v;
+            }
+            article{
+                h2 {
+                    border: solid 2px $primaryColor;
+                    text-align: center;
+                    &:hover{
+                        background-color: $primaryColor;
+                        color: $secondaryColor;
+                    }
+                }
+                p{
+                    text-align: center;
+                }
+            } 
         }
-        .main-grid section, article{
-            border: solid 2px rgb(82, 81, 67);
-        }
+
     
         .noticia1{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
+            width: $width;
+            @include flex(column);
             img{
-                width: 200px;
+            width: 200px;
             height: 200px;
             }
         }
         .noticia2{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        .noticia2 img{
+            width: $width;
+            @include flex(column);
+            img{
             width: 200px;
             height: 200px;
+            }
         }
         .noticia3{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        .noticia3 img{
+            width: $width;
+            @include flex(column);
+            img{
             width: 200px;
             height: 200px;
+            }
         }
         .noticia4{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        .noticia4 img{
+            width: $width;
+            @include flex(column);
+            img{
             width: 200px;
             height: 200px;
+            }
         }
         .noticia5{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        .noticia5 img{
+            width: $width;
+            @include flex(column);
+            img{
             width: 200px;
             height: 200px;
-        }
-        .main-grid .aside1{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        .main-grid .aside1 img{
-            width: 50%;
-            height: 100px;
-        }
-        .main-grid .aside2{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        .main-grid .aside2 img{
-            width: 50%;
-            height: 100px;
-        }
-        .main-grid .aside3{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        .main-grid .aside3 img{
-            width: 50%;
-            height: auto;
-        }
-        .main-grid .aside4{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        .main-grid .aside4 img{
-            width: 100px;
-            height: 100px;
+            }
         }
         main h2{
             text-align: center;
-        }
-        .main-grid article h2 {
-            border: solid 2px gold;
-        }
-        .main-grid article h2:hover{
-            background-color: gold;
-            color: black;
-        }
-        .main-grid article h2, p{
-            text-align: center;
-        }
-    
-        .main-grid .aside1{
-            grid-area: aside1;
-        }
-        .main-grid .aside2{
-            grid-area: aside2;
-        }
-        .main-grid .aside3{
-            grid-area: aside3;
-        }
-        .main-grid .aside4{
-            grid-area: aside4;
-        }
-        .main-grid .aside-v{
-            grid-area: aside-v;
         }
         
         /* END Pagina principal */
@@ -470,32 +509,31 @@
             "aside1 aside2 aside3"
             "aside4 aside-v aside-v";
             gap: 10px;
+            .aside4{
+                img{
+                    width: 50%;
+                    height: auto;
+                }
+            }
+            article{
+                h2 {
+                    border: solid 2px $primaryColor;
+                    &:hover{
+                        background-color: $primaryColor;
+                        color: $secondaryColor;
+                    } 
+                }
+            } 
         }
-        .local-grid .aside4 img{
-            width: 50%;
-            height: auto;
-        }
-        .local-grid article h2 {
-            border: solid 2px gold;
-        }
-        .local-grid article h2:hover{
-            background-color: gold;
-            color: black;
+        .contacto-grid{
+            .iframe-map{
+            @include flexx(center,center,column)
+            }
+            .section-img {
+                margin-top: 10px;
+                margin-left: 25%;
+            }
         } 
-    
-        .contacto-grid .iframe-map{
-            flex-direction: column;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    
-        .contacto-grid .section-img {
-            margin-top: 10px;
-            margin-left: 25%;
-        }
-    
-    
     }   
     
         /* End BreakPoint MQ en table */

@@ -1,4 +1,27 @@
-.noticia1{
+@mixin flex($direction){
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin align($align){
+    display: flex;
+    align-items: $align;
+}
+
+@mixin overflow($width,$over){
     width: $width;
-    overflow: hidden;
+    overflow: $over;
+}
+
+@mixin centrar($justify,$align){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flexx($justify,$align,$direction){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
 }

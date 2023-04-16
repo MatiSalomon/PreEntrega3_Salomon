@@ -36,21 +36,24 @@ main{
     background-color: $mainColor;
     color: $colorletter;
 }
-.others-d article {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color:$articleColor;
-    margin-bottom: 10px;
-}
-.others-d img{
-    width: 200px;
-    height: auto;
-    p{
-        text-align: center;
+.others-d{
+    article {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color:$articleColor;
+        margin-bottom: 10px;
     }
-}
-
+    img{
+        img{
+            width: 200px;
+            height: auto;
+        }
+        p{
+            text-align: center;
+        }
+    }
+} 
 .bg-gris{
     background-color: rgb(44, 44, 44);
 }
