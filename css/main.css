@@ -712,6 +712,13 @@ footer h3 {
     height: 250px;
     margin-left: 5px;
   }
+  .main-grid section h2 {
+    text-align: center;
+    text-decoration: underline;
+  }
+  .main-grid section p {
+    margin-left: 5px;
+  }
   .main-grid article h2 {
     border: solid 2px gold;
   }
@@ -742,6 +749,18 @@ footer h3 {
     width: 100%;
     height: 100%;
   }
+  .torneo-ofi {
+    margin-left: 320px;
+    margin-top: 30px;
+  }
+  .torneo-ofi:hover {
+    color: gold;
+  }
+  .texto-borde {
+    -webkit-text-stroke: 1px black;
+    color: white;
+    font-size: 2.3em;
+  }
   /* END Pagina principal */
   /* GRID pagina local */
   .local-grid {
@@ -764,6 +783,7 @@ footer h3 {
   }
   .local-grid section h2 {
     text-align: center;
+    text-decoration: underline;
   }
   .local-grid section p {
     text-align: center;
@@ -795,6 +815,11 @@ footer h3 {
   }
   .local-grid .c-border {
     border: 2px solid gold;
+  }
+  .texto-borde {
+    -webkit-text-stroke: 1px black;
+    color: white;
+    font-size: 2.3em;
   }
   .local-grid {
     display: grid;
@@ -900,6 +925,12 @@ footer h3 {
     width: 95%;
   }
 }
+.texto-borde {
+  -webkit-text-stroke: 1px black;
+  color: white;
+  font-size: 2.3em;
+}
+
 /* END Pagina Local */
 /* end MQ Desktop */
 

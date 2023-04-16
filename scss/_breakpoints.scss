@@ -571,13 +571,20 @@
                     height: 250px;
                     margin-left: 5px;
                 }
+                h2{
+                    text-align: center;
+                    text-decoration: underline;
+                }
+                p{
+                    margin-left: 5px;
+                }
             }
             article{
                 h2{
                     border: solid 2px $primaryColor;
                     &:hover{
-                        background-color: gold;
-                        color: black;
+                        background-color:$primaryColor;
+                        color: $secondaryColor;
                     }
                 }
             }
@@ -588,7 +595,7 @@
                 overflow: hidden;
             }
             .border-video{
-                border: solid 2px gold;
+                border: solid 2px $primaryColor;
                 border-radius: 3px;
             }
             .googleCalendar{
@@ -605,6 +612,19 @@
                 width: 100%;
                 height: 100%;
             }
+        }
+        .torneo-ofi{
+            margin-left: 320px;
+            margin-top: 30px;
+            &:hover{
+                color: $primaryColor;
+            }
+        }
+
+        .texto-borde{
+            -webkit-text-stroke: 1px $secondaryColor;
+            color: $colorletter;
+            font-size: $textLg;
         }
         /* END Pagina principal */
     
@@ -629,6 +649,7 @@
                 }
                 h2{
                     text-align: center;
+                    text-decoration: underline;
                 }
                 p{
                     text-align: center;
@@ -665,6 +686,11 @@
             .c-border{
                 border: 2px solid $primaryColor;
             }
+        }
+        .texto-borde{
+            -webkit-text-stroke: 1px $secondaryColor;
+            color: $colorletter;
+            font-size: $textLg;
         }
 
 
@@ -772,6 +798,11 @@
                 width: 95%;
             }
         } 
+    }
+    .texto-borde{
+        -webkit-text-stroke: 1px $secondaryColor;
+        color: $colorletter;
+        font-size: $textLg;
     }
         /* END Pagina Local */
         /* end MQ Desktop */
