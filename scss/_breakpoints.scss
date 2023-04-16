@@ -1,0 +1,738 @@
+/*  Breakpoint MQ en Mobile */
+    /* Pagina principal */
+    @media (min-width:290px) and (max-width:580px){
+        .main-grid{
+            display: grid;
+            grid-template-columns: 100vw;
+            grid-template-rows: repeat(9, 40vh);
+            grid-template-areas:
+            "noti1"
+            "noti2"
+            "noti3"
+            "noti4"
+            "aside1"
+            "aside2"
+            "aside3"
+            "aside4"
+            "aside-v"
+            "googleCalendar";
+            box-sizing: border-box;
+            justify-content: center;
+            gap: 10px;
+
+            article{
+                h2{
+                    border: solid 2px $primaryColor;
+                    &:hover{
+                        background-color: $primaryColor;
+                        color: $secondaryColor;
+                    }
+                }
+                .video-display{
+                    margin-top: 0;;
+                }
+           }
+            section{
+                img{
+                    width: 150px;
+                    height: auto;
+                }
+                p{
+                    text-align: center;
+                }
+                h2{
+                    text-align: center;
+                }
+            } 
+        header{
+            width:100vw;
+            h1{
+                display: none;
+            }
+        }   
+        .w-70{
+            width: 100vw;
+        }
+    
+        nav img{
+            width: 20vw;
+        }
+        .googleCalendar{
+            overflow: hidden;
+           }
+        }
+        .border-video{
+            width: 100vw;
+            border: none;
+        }
+        
+        .noticia5{
+            display: none;
+        }
+        .img-aside{
+            display: flex;
+            justify-content: center;
+        }
+       .torneo-ofi{
+            text-align: center;
+           }
+
+        .noticia1{
+            width: $width;
+            overflow: hidden;
+        }
+        .noticia2{
+            width: $width;
+            overflow: hidden;
+        }
+        .noticia3{
+            width: $width;
+            overflow: hidden;
+        }
+        .noticia4{
+            width: $width;
+            overflow: hidden;
+        }
+        .aside1{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .aside1 img{
+            width: 50%;
+            height: auto;
+        }
+        .aside2{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .aside2 img{
+            width: 50%;
+            height: auto;
+        }
+        .aside3{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .aside3 img{
+            width: 50%;
+            height: auto;
+        }
+        .aside4{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .aside4 img{
+            width: 50%;
+            height: auto;
+        }
+
+    
+     aside p{
+       width: 95vw;
+       text-align: center;
+    
+     }
+        .aside-noti{
+        width: 100vw;
+        }
+        aside h4{
+            font-size: 1.3em;
+        }
+         
+     .googleCalendar{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        padding-bottom: 50%;
+        overflow: hidden;
+        iframe{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: $width;
+            height: 100%;
+        }
+        }
+     footer{
+        width: 100vw;
+        h3{
+            width: 95vw;
+        }
+        .logo-footer{
+            display: none;
+        }
+    }
+    .noticia1{
+        flex-direction: column;
+    }
+    .noticia2{
+        flex-direction: column;
+    }
+    .noticia3{
+        flex-direction: column;
+    }
+    .noticia4{
+        flex-direction: column;
+    }
+    .main-grid .video-display{
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+        margin-bottom: 10px;
+    }
+    
+        /* END Pagina Principal */
+    
+        /* Pagina Local */
+    .local-grid{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: repeat(8, 40vh);
+        grid-template-areas:
+        "noti1"
+        "noti2"
+        "noti3"
+        "noti4"
+        "aside1"
+        "aside2"
+        "aside3"
+        "aside4"
+        "aside-v";
+        box-sizing: border-box;
+        justify-content: center;
+        gap: 5px;
+       }
+       .local-grid section img{
+        width: 150px;
+        height: auto;
+       }
+       .torneo-ofi{
+        text-align: center;
+       }
+        .border-h2{
+        border: solid 2px gold;
+       }
+       .local-grid section{
+        margin-bottom: 5px;
+       }
+       .local-grid article{
+       background-color: rgb(70, 70, 70);
+        margin-bottom: 5px;
+       }
+       .text-line{
+        text-decoration: underline;
+       }
+        /* END Pagina Local */
+    
+        /* inicio Pagina Internacional */
+       .inter-grid{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: repeat(8, 40vh);
+        grid-template-areas:
+        "noti1"
+        "noti2"
+        "noti3"
+        "noti4"
+        "aside1"
+        "aside2"
+        "aside3"
+        "aside4"
+        "aside-v";
+        box-sizing: border-box;
+        justify-content: center;
+        gap: 5px;
+       }
+       .inter-grid section img{
+        width: 150px;
+        height: auto;
+       }
+       .torneo-ofi{
+        text-align: center;
+       }
+        .border-h2{
+        border: solid 2px gold;
+       }
+       .inter-grid section{
+        margin-bottom: 5px;
+       }
+       .inter-grid article{
+       background-color: rgb(70, 70, 70);
+        margin-bottom: 5px;
+       }
+       .text-line{
+        text-decoration: underline;
+       }
+    
+    
+       .contacto-grid{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 600px 200px repeat(4, 40vh);
+        grid-template-areas:
+        "form-register"
+        "iframe-map"
+        "aside1"
+        "aside2"
+        "aside3"
+        "aside4";
+        box-sizing: border-box;
+        justify-content: center;
+        gap: 5px;
+        row-gap: 30px;
+       }
+       .contacto-grid section{
+        margin-bottom: 5px;
+        height: 100%;
+       }
+       .contacto-grid article{
+       background-color: rgb(70, 70, 70);
+        margin-bottom: 5px;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+       }
+       .contacto-grid .form-register{
+        width: 90%;
+       }
+       .contacto-grid .iframe-map{
+        display: block;
+        justify-content: center;
+        width: 100%;
+          margin-bottom: 40px;
+       }
+       .contacto-grid .iframe-map iframe{
+        width: 100%;
+        height: 100%;
+     
+       }
+       .otros-dep{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+       }
+       .contacto-grid article img{
+        margin-left: 20% ;
+        margin-top: 10px;
+       }
+    
+    } 
+     
+        /* end MQ en Mobile */
+    
+        /* 2do Breakpoint Incio MD para Tablet */
+        /* GRID pagina principal */
+    @media (min-width:581px) and (max-width:1199px){
+        .main-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows:repeat(6,250px);
+            grid-template-areas:
+            "noti1 noti2 noti3"
+            "noti1 noti2 noti3"
+            "noti4 noti5 aside1"
+            "noti4 noti5 aside2"
+            "aside-v aside-v aside3"
+            "aside-v aside-v googleCalendar";
+            gap: 10px;
+        }
+        .main-grid section, article{
+            border: solid 2px rgb(82, 81, 67);
+        }
+    
+        .noticia1{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            img{
+                width: 200px;
+            height: 200px;
+            }
+        }
+        .noticia2{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .noticia2 img{
+            width: 200px;
+            height: 200px;
+        }
+        .noticia3{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .noticia3 img{
+            width: 200px;
+            height: 200px;
+        }
+        .noticia4{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .noticia4 img{
+            width: 200px;
+            height: 200px;
+        }
+        .noticia5{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .noticia5 img{
+            width: 200px;
+            height: 200px;
+        }
+        .main-grid .aside1{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-grid .aside1 img{
+            width: 50%;
+            height: 100px;
+        }
+        .main-grid .aside2{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-grid .aside2 img{
+            width: 50%;
+            height: 100px;
+        }
+        .main-grid .aside3{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-grid .aside3 img{
+            width: 50%;
+            height: auto;
+        }
+        .main-grid .aside4{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-grid .aside4 img{
+            width: 100px;
+            height: 100px;
+        }
+        main h2{
+            text-align: center;
+        }
+        .main-grid article h2 {
+            border: solid 2px gold;
+        }
+        .main-grid article h2:hover{
+            background-color: gold;
+            color: black;
+        }
+        .main-grid article h2, p{
+            text-align: center;
+        }
+    
+        .main-grid .aside1{
+            grid-area: aside1;
+        }
+        .main-grid .aside2{
+            grid-area: aside2;
+        }
+        .main-grid .aside3{
+            grid-area: aside3;
+        }
+        .main-grid .aside4{
+            grid-area: aside4;
+        }
+        .main-grid .aside-v{
+            grid-area: aside-v;
+        }
+        
+        /* END Pagina principal */
+    
+        /* GRID Pagina Local */
+        .local-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows:repeat(5,250px) 300px;
+            grid-template-areas:
+            "noti1 noti1 noti2"
+            "noti1 noti1 noti2"
+            "noti3 noti4 noti5"
+            "noti3 noti4 noti5"
+            "aside1 aside2 aside3"
+            "aside4 aside-v aside-v";
+            gap: 10px;
+        }
+        .local-grid .aside4 img{
+            width: 50%;
+            height: auto;
+        }
+        .local-grid article h2 {
+            border: solid 2px gold;
+        }
+        .local-grid article h2:hover{
+            background-color: gold;
+            color: black;
+        } 
+    
+        .contacto-grid .iframe-map{
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .contacto-grid .section-img {
+            margin-top: 10px;
+            margin-left: 25%;
+        }
+    
+    
+    }   
+    
+        /* End BreakPoint MQ en table */
+    
+        /* Breakpoint MQ Desktop */
+        /* GRID pagina principal */
+    @media (min-width:1200px){
+        .main-grid{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(4, 15%);
+        grid-template-rows: repeat(5, 300px);
+        grid-template-areas: 
+        "noti1 noti1 noti1 aside1"
+        "noti2 noti2 noti2 aside2"
+        "noti3 noti3 noti3 aside3"
+        "noti4 noti4 noti4 aside-v"
+        "noti5 noti5 noti5 aside";
+        gap: 5px;
+        }
+        aside img{
+        width: 150px;
+        height: 100px;
+        }
+        .video-display{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        overflow: hidden;
+        }
+        .border-video{
+        border: solid 2px gold;
+        border-radius: 3px;
+        }
+        .main-grid section img{
+        width: 250px;
+        height: 250px;
+        margin-left: 5px;
+        }
+        .googleCalendar{
+            position: relative;
+            height: 100%;
+            width: 100%;
+            padding-bottom: 50%;
+            }
+          
+          .googleCalendar iframe{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+          .main-grid article h2 {
+            border: solid 2px gold;
+        }
+        .main-grid article h2:hover{
+            background-color: gold;
+            color: black;
+        }
+        /* END Pagina principal */
+    
+        /* GRID pagina local */
+        .local-grid{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(5, 15%) ;
+        grid-template-rows: repeat(5, 300px) ;
+        grid-template-areas: 
+        "noti1 noti1 noti2 noti2 aside1"
+        "noti1 noti1 noti2 noti2 aside2"
+        "noti3 noti3 noti4 noti4 aside3"
+        "noti3 noti3 noti4 noti4 aside4"
+        "noti5 noti5 noti5 aside-v aside-v";
+        gap: 5px;
+        }
+        .local-grid section {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        }
+        .bg-aside{
+        background-color: rgb(58, 58, 58);
+        } 
+        .local-grid section img{
+            width: 60%;
+            overflow: hidden;
+        }
+        .local-grid aside {
+            display: flex;
+            flex-direction: column;
+        }
+        .local-aside{
+            height: 100%;
+        }
+        section h2{
+            text-align: center;
+        }
+        section p{
+            text-align: center;
+        }
+        .c-border{
+            border: 2px solid gold;
+        }
+        .torneo-ofi{
+            margin-left: 230px;
+            margin-top: 30px;
+        }
+        .torneo-ofi:hover{
+            color: gold;
+        }
+        .local-grid .noticia5 img{
+            width: 30%;
+            height: auto
+        }
+        .local-grid article h2 {
+            border: solid 2px gold;
+        }
+        .local-grid article h2:hover{
+            background-color: gold;
+            color: black;
+        }
+    
+        .local-grid{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(5, 15%) ;
+        grid-template-rows: repeat(5, 300px) ;
+        grid-template-areas: 
+        "noti1 noti1 noti2 noti2 aside1"
+        "noti1 noti1 noti2 noti2 aside2"
+        "noti3 noti3 noti4 noti4 aside3"
+        "noti3 noti3 noti4 noti4 aside4"
+        "noti5 noti5 noti5 aside-v aside-v";
+        gap: 5px;
+            section {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                img{
+                    width: 60%;
+                    overflow: hidden;
+                }
+            }
+        }
+     
+        .bg-aside{
+        background-color: rgb(58, 58, 58);
+        } 
+        .local-grid aside {
+            display: flex;
+            flex-direction: column;
+        }
+        .local-aside{
+            height: 100%;
+        }
+        section h2{
+            text-align: center;
+        }
+        section p{
+            text-align: center;
+        }
+        .c-border{
+            border: 2px solid gold;
+        }
+        .torneo-ofi{
+            margin-left: 230px;
+            margin-top: 30px;
+        }
+        .torneo-ofi:hover{
+            color: gold;
+        }
+        .local-grid .noticia5 img{
+            width: 30%;
+            height: auto
+        }
+        .local-grid article h2 {
+            border: solid 2px gold;
+        }
+        .local-grid article h2:hover{
+            background-color: gold;
+            color: black;
+        }
+    
+    
+        .contacto-grid .iframe-map{
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+        .contacto-grid article{
+            background-color: #4b4b4b;
+    
+        }
+        .contacto-grid article img {
+            width: 300px;
+            height: auto;
+            margin-left: 35%;
+            margin-top: 10px;
+        }
+        .contacto-grid .aside1{
+            border: 2px solid gold;
+            display: flex;
+            width: 95%;
+            flex-direction: column;
+            margin-left: 50px;
+        }
+        .contacto-grid .otros-dep{
+            text-align: center;
+        }
+        .contacto-grid .aside2{
+            border: 2px solid gold;
+            display: flex;
+            width: 95%;
+            flex-direction: column;
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+        .contacto-grid .aside3{
+            border: 2px solid gold;
+            display: flex;
+            width: 95%;
+            flex-direction: column;
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+        .contacto-grid .aside4{
+            border: 2px solid gold;
+            display: flex;
+            width: 95%;
+            flex-direction: column;
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+    }
+        /* END Pagina Local */
+        /* end MQ Desktop */
