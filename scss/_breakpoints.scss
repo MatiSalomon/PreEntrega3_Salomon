@@ -62,162 +62,151 @@
             justify-content: center;
             gap: 10px;
 
-            article{
-                h2{
-                    border: solid 2px $primaryColor;
-                    &:hover{
-                        background-color: $primaryColor;
-                        color: $secondaryColor;
+                article{
+                    h2{
+                        border: solid 2px $primaryColor;
+                        &:hover{
+                            background-color: $primaryColor;
+                            color: $secondaryColor;
+                        }
+                    }
+                    .video-display{
+                    margin-top: 0;;
+                    }
+                    p{
+                        text-align: center;
+                        font-weight: $textLight;
+                    }
+                    h3{
+                        font-weight: $textBolt
+                    }
+                }
+                section{
+                    @include flex(column);
+                    img{
+                        width: 150px;
+                        height: auto;
+                    }
+                    p{
+                        text-align: center;
+                    }
+                    h2{
+                        text-align: center;
+                    }
+                } 
+                header{
+                    width:100vw;
+                    h1{
+                        display: none;
+                    }
+                }   
+                .w-70{
+                    width: 100vw;
+                }
+                .googleCalendar{
+                    overflow: hidden;
+                    position: relative;
+                    height: $heigth;
+                    width: $width;
+                    padding-bottom: 50%;
+                    iframe{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: $width;
+                        height: $heigth;
                     }
                 }
                 .video-display{
-                    margin-top: 0;;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 60px;
+                    margin-bottom: 10px;
                 }
-           }
-            section{
-                @include flex(center);
-                img{
-                    width: 150px;
-                    height: auto;
+                .noticia5{
+                    display: none;
                 }
-                p{
+                .img-aside{
+                    display: flex;
+                    justify-content: center;
+                }
+                .torneo-ofi{
                     text-align: center;
                 }
-                h2{
-                    text-align: center;
+                .noticia1{
+                    @include overflow($width,hidden);
                 }
-            } 
-        header{
-            width:100vw;
-            h1{
-                display: none;
-            }
-        }   
-        .w-70{
-            width: 100vw;
-        }
-    
-
-        .googleCalendar{
-            overflow: hidden;
-            position: relative;
-            height: $heigth;
-            width: $width;
-            padding-bottom: 50%;
-                iframe{
-                    position: absolute;
-                    top: 0;
-                    left: 0;
+                .noticia2{
+                    @include overflow($width,hidden)
+                }
+                .noticia3{
+                    @include overflow($width,hidden)
+                }
+                .noticia4{
+                    @include overflow($width,hidden)
+                }
+                .aside1{
                     width: $width;
-                    height: $heigth;
+                    @include flex(column);
+                    img{
+                        width: $widthmid;
+                        height: auto;
+                    }
+                }
+                .aside2{
+                    width: $width;
+                    @include flex(column);
+                    img{
+                        width: $widthmid;
+                        height: auto;
+                    }
+                }       
+                .aside3{
+                    width: $width;
+                    @include flex(column);
+                    img{
+                        width: $widthmid;
+                        height: auto;
+                    }
+                }
+                .aside4{
+                    width: $width;
+                    @include flex(column);
+                    img{
+                        width: $widthmid;
+                        height: auto;
+                    }
+                }
+                aside{
+                    p{
+                        width: 95vw;
+                        text-align: center;
+                    }
+                    h4{
+                        font-size: $textMd;
+                    }
+                } 
+                .aside-noti{
+                    width: 100vw;
                 }
         }
-        .video-display{
-            display: flex;
-            justify-content: center;
-            margin-top: 60px;
-            margin-bottom: 10px;
-        }
-        .noticia1{
-            flex-direction: column;
-        }
-        .noticia2{
-            flex-direction: column;
-        }
-        .noticia3{
-            flex-direction: column;
-        }
-        .noticia4{
-            flex-direction: column;
-        }
-        }
 
-
-        nav img{
-            width: 20vw;
-        }
+            nav img{
+                width: 20vw;
+            }
             .border-video{
                 width: 100vw;
                 border: none;
             }
-        
-            .noticia5{
-                display: none;
+             footer{
+                width: 100vw;
+                h3{
+                    width: 95vw;
+                }
+                .logo-footer{
+                    display: none;
+                }
             }
-            .img-aside{
-                display: flex;
-                justify-content: center;
-            }
-            .torneo-ofi{
-                text-align: center;
-            }
-        .noticia1{
-            @include overflow($width,hidden);
-        }
-        .noticia2{
-            @include overflow($width,hidden)
-        }
-        .noticia3{
-            @include overflow($width,hidden)
-        }
-        .noticia4{
-            @include overflow($width,hidden)
-        }
-        .aside1{
-            width: $width;
-            @include flex(column);
-            img{
-                width: $widthmid;
-                height: auto;
-            }
-        }
-        .aside2{
-            width: $width;
-            @include flex(column);
-            img{
-                width: $widthmid;
-                height: auto;
-            }
-        }
-        .aside3{
-            width: $width;
-            @include flex(column);
-            img{
-                width: $widthmid;
-                height: auto;
-            }
-        }
-        .aside4{
-            width: $width;
-            @include flex(column);
-            img{
-                width: $widthmid;
-                height: auto;
-            }
-        }
-    
-        aside{
-            p{
-                width: 95vw;
-                text-align: center;
-            }
-            h4{
-                font-size: $textMd;
-            }
-        } 
-        .aside-noti{
-        width: 100vw;
-        }
-
-        footer{
-            width: 100vw;
-            h3{
-            width: 95vw;
-            }
-            .logo-footer{
-            display: none;
-            }
-        }
         /* END Pagina Principal */
     
         /* Pagina Local */
@@ -241,17 +230,30 @@
 
         section{
             margin-bottom: 5px;
+            @include flex(column);
             img{
                 width: 150px;
                 height: auto;
+            }
+            h2{
+                text-align: center;
+                font-weight: $textBolt;
             }
         } 
         article{
         background-color: rgb(70, 70, 70);
         margin-bottom: 5px;
+        @include flex(column);
+        img{
+            margin-left: 80px;
+        }
         }
         p{
             text-align: center;
+            font-weight: $textLight
+        }
+        h3{
+            font-weight: $textBolt
         }
         .noticia1{
             @include overflow($width,hidden);
@@ -266,6 +268,54 @@
         .noticia4{
             @include overflow($width,hidden)
         }
+        .noticia5{
+            display: none;
+        }
+        .aside1{
+            width: $width;
+            @include flex(column);
+            img{
+                width: $widthmid;
+                height: auto;
+            }
+        }
+        .aside2{
+            width: $width;
+            @include flex(column);
+            img{
+                width: $widthmid;
+                height: auto;
+            }
+        }       
+        .aside3{
+            width: $width;
+            @include flex(column);
+            img{
+                width: $widthmid;
+                height: auto;
+            }
+        }
+        .aside4{
+            width: $width;
+            @include flex(column);
+            img{
+                width: $widthmid;
+                height: auto;
+            }
+        }
+        aside{
+            p{
+                width: 95vw;
+                text-align: center;
+            }
+            h4{
+                font-size: $textMd;
+            }
+        } 
+        .aside-noti{
+            width: 100vw;
+        }
+
     }
 
        .torneo-ofi{
@@ -395,9 +445,41 @@
             gap: 10px;
             section{
                 border: solid 2px rgb(82, 81, 67);
+                p{
+                    text-align: center;
+                }
+                h2{
+                    text-decoration: underline;
+                    overflow: hidden;
+
+                }
             } 
             article{
                 border: solid 2px rgb(82, 81, 67);
+                overflow: hidden;
+                h2{
+                    border: solid 2px $primaryColor;
+                    text-align: center;
+                    &:hover{
+                        background-color: $primaryColor;
+                        color: $secondaryColor;
+                    }
+                }
+                h3{
+                    font-size: $textSm;
+                    font-weight: $textBolt;
+                }
+                p{
+                    text-align: center;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    font-weight: $textLight;
+                }
+                img{
+                    margin-left: 50px;
+                }
             }
             .aside1{
                 grid-area: aside1;
@@ -426,74 +508,61 @@
                     height: auto;
                 }
             }
-            .aside4{
-                grid-area: aside4;
-                width: $width;
-                @include flex(column);
-                img{
-                    width: 100px;
-                    height: 100px;
-                }
-            }
             .aside-v{
                 grid-area: aside-v;
             }
-            article{
-                h2 {
-                    border: solid 2px $primaryColor;
-                    text-align: center;
-                    &:hover{
-                        background-color: $primaryColor;
-                        color: $secondaryColor;
-                    }
+            .noticia1{
+                width: $width;
+                @include flex(column);
+                img{
+                width: 200px;
+                height: auto;
                 }
-                p{
-                    text-align: center;
+            }
+            .noticia2{
+                width: $width;
+                @include flex(column);
+                img{
+                width: 200px;
+                height: auto;
                 }
-            } 
+            }
+            .noticia3{
+                width: $width;
+                @include flex(column);
+                img{
+                width: 200px;
+                height: auto;
+                }
+            }
+            .noticia4{
+                width: $width;
+                @include flex(column);
+                img{
+                width: 200px;
+                height: auto;
+                }
+            }
+            .noticia5{
+                width: $width;
+                @include flex(column);
+                img{
+                width: 200px;
+                height: auto;
+                }
+            }
         }
 
-    
-        .noticia1{
-            width: $width;
-            @include flex(column);
-            img{
-            width: 200px;
-            height: 200px;
-            }
+        .texto-borde{
+            -webkit-text-stroke: 1px $secondaryColor;
+            color: $colorletter;
+            font-size: $textLg;
+            text-shadow: 1px 1px 2px $secondaryColor, 0 0 1em $secondaryColor, 0 0 0.2em $secondaryColor;
         }
-        .noticia2{
-            width: $width;
-            @include flex(column);
-            img{
-            width: 200px;
-            height: 200px;
-            }
+        .sombra{
+            text-shadow: 1px 1px 2px $secondaryColor, 0 0 1em $secondaryColor, 0 0 0.2em $secondaryColor;
         }
-        .noticia3{
-            width: $width;
-            @include flex(column);
-            img{
-            width: 200px;
-            height: 200px;
-            }
-        }
-        .noticia4{
-            width: $width;
-            @include flex(column);
-            img{
-            width: 200px;
-            height: 200px;
-            }
-        }
-        .noticia5{
-            width: $width;
-            @include flex(column);
-            img{
-            width: 200px;
-            height: 200px;
-            }
-        }
+
         main h2{
             text-align: center;
         }
@@ -513,6 +582,16 @@
             "aside1 aside2 aside3"
             "aside4 aside-v aside-v";
             gap: 10px;
+            section{
+                p{
+                    font-size: $textSm;
+                    font-weight: $textLight;
+                    text-align: center;
+                }
+                h2{
+                    font-weight: $textBolt;
+                }
+            }
             .aside4{
                 img{
                     width: $widthmid;
@@ -520,6 +599,8 @@
                 }
             }
             article{
+                overflow: hidden;
+                border: solid 1px $borders;
                 h2 {
                     border: solid 2px $primaryColor;
                     &:hover{
@@ -527,7 +608,90 @@
                         color: $secondaryColor;
                     } 
                 }
+                h3{
+                    font-size: $textSm;
+                    font-weight: $textBolt;
+                }
+                img{
+                    margin-left: 50px;
+                }
+                p{
+                    text-align: center;
+                    font-weight: $textLight;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 4;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    font-weight: $textLight;
+                }
             } 
+            .noticia1{
+                width: $width;
+                @include flex(column);
+                img{
+                width: 200px;
+                height: auto;
+                }
+            }
+            .noticia2{
+                width: $width;
+                @include flex(column);
+                img{
+                width: 200px;
+                height: auto;
+                }
+            }
+            .noticia3{
+                width: $width;
+                @include flex(column);
+                img{
+                width: 200px;
+                height: auto;
+                }
+            }
+            .noticia4{
+                width: $width;
+                @include flex(column);
+                img{
+                width: 200px;
+                height: auto;
+                }
+            }
+            .noticia5{
+                width: $width;
+                @include flex(column);
+                img{
+                width: 200px;
+                height: auto;
+                }
+            }
+            .aside1{
+                grid-area: aside1;
+                width: $width;
+                @include flex(column);
+                img{
+                    width: $widthmid;
+                    height: 100px;
+                }
+            }
+            .aside2{
+                grid-area: aside2;
+                width: $width;
+                @include flex(column);
+                img{
+                    width: $widthmid;
+                    height: 100px;
+                }
+            }
+            .aside3{
+                grid-area: aside3;
+                width: $width;
+                @include flex(column);
+                img{
+                    width: $widthmid;
+                    height: auto;
+                }
+            }
         }
         .contacto-grid{
             main h2{
@@ -575,13 +739,21 @@
                 h2{
                     text-align: center;
                     text-decoration: underline;
+                    overflow: hidden;
+                    font-size: $textMd;
                 }
                 p{
                     margin-left: 5px;
                 }
+                &:hover{
+                    transform: scale(1.03);
+                    transition: all 0.8s;
+                    cursor: pointer;
+                }
             }
             article{
                 overflow: hidden;
+                border: solid 1px $borders;
                 h2{
                     border: solid 2px $primaryColor;
                     &:hover{
@@ -631,18 +803,21 @@
                 height: 100%;
             }
         }
+        .texto-borde{
+            -webkit-text-stroke: 1px $secondaryColor;
+            color: $colorletter;
+            font-size: $textLg;
+            text-shadow: 1px 1px 2px $secondaryColor, 0 0 1em $secondaryColor, 0 0 0.2em $secondaryColor;
+        }
+        .sombra{
+            text-shadow: 1px 1px 2px $secondaryColor, 0 0 1em $secondaryColor, 0 0 0.2em $secondaryColor;
+        }
         .torneo-ofi{
             margin-left: 320px;
             margin-top: 30px;
             &:hover{
                 color: $primaryColor;
             }
-        }
-
-        .texto-borde{
-            -webkit-text-stroke: 1px $secondaryColor;
-            color: $colorletter;
-            font-size: $textLg;
         }
         /* END Pagina principal */
     
@@ -720,14 +895,16 @@
             .c-border{
                 border: 2px solid $primaryColor;
             }
+            .texto-borde{
+                -webkit-text-stroke: 1px $secondaryColor;
+                color: $colorletter;
+                font-size: $textLg;
+                text-shadow: 1px 1px 2px $secondaryColor, 0 0 1em $secondaryColor, 0 0 0.2em $secondaryColor;
+            }
+            .sombra{
+                text-shadow: 1px 1px 2px $secondaryColor, 0 0 1em $secondaryColor, 0 0 0.2em $secondaryColor;
+            }
         }
-        .texto-borde{
-            -webkit-text-stroke: 1px $secondaryColor;
-            color: $colorletter;
-            font-size: $textLg;
-        }
-
-
         .local-grid{
         display: grid;
         justify-content: center;
@@ -785,6 +962,15 @@
                     color: $primaryColor;
                 }
             }
+            .texto-borde{
+                -webkit-text-stroke: 1px $secondaryColor;
+                color: $colorletter;
+                font-size: $textLg;
+                text-shadow: 1px 1px 2px $secondaryColor, 0 0 1em $secondaryColor, 0 0 0.2em $secondaryColor;
+            }
+            .sombra{
+                text-shadow: 1px 1px 2px $secondaryColor, 0 0 1em $secondaryColor, 0 0 0.2em $secondaryColor;
+            }
         }
      
         .contacto-grid{
@@ -798,8 +984,11 @@
                 img {
                     width: 300px;
                     height: auto;
-                    margin-left: 35%;
+                    margin-left: 40%;
                     margin-top: 10px;
+                }
+                p{
+                    text-align: center;
                 }
             }
             .otros-dep{
@@ -833,15 +1022,6 @@
                 width: 95%;
             }
         } 
-    }
-    .texto-borde{
-        -webkit-text-stroke: 1px $secondaryColor;
-        color: $colorletter;
-        font-size: $textLg;
-        text-shadow: 1px 1px 2px $secondaryColor, 0 0 1em $secondaryColor, 0 0 0.2em $secondaryColor;
-    }
-    .sombra{
-        text-shadow: 1px 1px 2px $secondaryColor, 0 0 1em $secondaryColor, 0 0 0.2em $secondaryColor;
     }
         /* END Pagina Local */
         /* end MQ Desktop */

@@ -1,18 +1,15 @@
 /* INICIO FOOTER */
 footer{
     background-color: rgb(22, 22, 22);
-    display: flex;
-    justify-content: center;
+    @extend .fleex;
     flex-direction: column;
     h3{
         text-align: center;
         color: $colorletter;
     }
 }
-
 .logo-footer{
-    display: flex;
-    justify-content: center;
+    @extend .fleex;
     width: $width;
     height: auto;
 
@@ -22,12 +19,10 @@ footer{
     margin-top: 5px;
 }
 .icons{
-    display: flex;
-    justify-content: center;
+    @extend .fleex;
     svg{
         margin-left: 5px;
         margin-right: 5px;
     }
 }
-
 /* END FOOTER */
