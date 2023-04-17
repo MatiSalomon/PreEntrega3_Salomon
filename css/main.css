@@ -430,6 +430,7 @@ footer h3 {
   .local-grid article {
     background-color: rgb(70, 70, 70);
     margin-bottom: 5px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
   }
@@ -571,7 +572,8 @@ footer h3 {
     height: 100%;
   }
   .contacto-grid article img {
-    margin-left: 20%;
+    margin-left: 40px;
+    width: 200px;
     margin-top: 10px;
   }
   .contacto-grid article p {
@@ -1002,6 +1004,11 @@ footer h3 {
   .local-grid section p {
     text-align: center;
   }
+  .local-grid section:hover {
+    transform: scale(1.03);
+    transition: all 0.8s;
+    cursor: pointer;
+  }
   .local-grid aside {
     display: flex;
     flex-direction: center;
@@ -1078,6 +1085,11 @@ footer h3 {
   }
   .local-grid section p {
     text-align: center;
+  }
+  .local-grid section:hover {
+    transform: scale(1.03);
+    transition: all 0.8s;
+    cursor: pointer;
   }
   .local-grid aside {
     display: flex;
