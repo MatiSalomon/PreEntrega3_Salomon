@@ -12,6 +12,8 @@ nav{
     width: 80%;
     li{
         a{
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: $textMd;
             color: $colorletter;
             &:hover{
                 color: $primaryColor;
