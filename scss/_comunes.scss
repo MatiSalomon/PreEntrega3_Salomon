@@ -124,16 +124,13 @@ main{
 }
 
 .error-msj{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexx(center,center,column);
     width: 100%;
     height: 100vh;
 }
 .font-beba{
-    color: black;
-    font-weight: bold;
+    color: $secondaryColor;
+    font-weight: $textBolt;
     font-size: 2em;
     font-family: 'Bebas Neue', sans-serif;
 }

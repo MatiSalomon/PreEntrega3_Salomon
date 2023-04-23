@@ -92,33 +92,33 @@ main {
   color: white;
   box-shadow: 7px 13px 37px black;
 }
-  .form-register .botons {
-    width: 100%;
-    background: #1f53c5;
-    border: none;
-    padding: 12px;
-    color: white;
-    margin: 16px 0;
-    font-size: 1em;
-  }
-  .form-register p {
-    height: 40px;
-    text-align: center;
-    font-size: 1em;
-    line-height: 40px;
-  }
-  .form-register a {
-    color: white;
-    text-decoration: none;
-  }
-  .form-register a:hover {
-    color: white;
-    text-decoration: underline;
-  }
-  .form-register h3 {
-    font-size: 1.4em;
-    margin-bottom: 20px;
-  }
+.form-register .botons {
+  width: 100%;
+  background: #1f53c5;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 1em;
+}
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 1em;
+  line-height: 40px;
+}
+.form-register a {
+  color: white;
+  text-decoration: none;
+}
+.form-register a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.form-register h3 {
+  font-size: 1.4em;
+  margin-bottom: 20px;
+}
 
 .controls {
   width: 100%;
@@ -139,16 +139,16 @@ main {
 
 .error-msj {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100%;
   height: 100vh;
 }
 
 .font-beba {
   color: black;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 2em;
   font-family: "Bebas Neue", sans-serif;
 }
@@ -184,7 +184,6 @@ main {
   font-size: 1.4em;
 }
 
-/* INICIO NAV */
 nav {
   background-image: url(../img/nav/imagen1.jpg);
 }
@@ -813,13 +812,7 @@ footer h3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(5, 250px) 300px;
-    grid-template-areas: 
-    "noti1 noti1 noti2" 
-    "noti1 noti1 noti2" 
-    "noti3 noti4 noti5" 
-    "noti3 noti4 noti5" 
-    "aside1 aside2 aside3" 
-    "aside4 aside-v aside-v";
+    grid-template-areas: "noti1 noti1 noti2" "noti1 noti1 noti2" "noti3 noti4 noti5" "noti3 noti4 noti5" "aside1 aside2 aside3" "aside4 aside-v aside-v";
     gap: 10px;
   }
   .local-grid section p {
@@ -959,12 +952,7 @@ footer h3 {
     justify-content: center;
     grid-template-columns: repeat(4, 15%);
     grid-template-rows: repeat(5, 300px);
-    grid-template-areas: 
-    "noti1 noti1 noti1 aside1" 
-    "noti2 noti2 noti2 aside2" 
-    "noti3 noti3 noti3 aside3" 
-    "noti4 noti4 noti4 aside-v" 
-    "noti5 noti5 noti5 aside";
+    grid-template-areas: "noti1 noti1 noti1 aside1" "noti2 noti2 noti2 aside2" "noti3 noti3 noti3 aside3" "noti4 noti4 noti4 aside-v" "noti5 noti5 noti5 aside";
     gap: 5px;
   }
   .main-grid aside img {
@@ -1063,12 +1051,7 @@ footer h3 {
     justify-content: center;
     grid-template-columns: repeat(5, 15%);
     grid-template-rows: repeat(5, 300px);
-    grid-template-areas: 
-    "noti1 noti1 noti2 noti2 aside1" 
-    "noti1 noti1 noti2 noti2 aside2" 
-    "noti3 noti3 noti4 noti4 aside3" 
-    "noti3 noti3 noti4 noti4 aside4" 
-    "noti5 noti5 noti5 aside-v aside-v";
+    grid-template-areas: "noti1 noti1 noti2 noti2 aside1" "noti1 noti1 noti2 noti2 aside2" "noti3 noti3 noti4 noti4 aside3" "noti3 noti3 noti4 noti4 aside4" "noti5 noti5 noti5 aside-v aside-v";
     gap: 5px;
   }
   .local-grid section {
@@ -1151,12 +1134,7 @@ footer h3 {
     justify-content: center;
     grid-template-columns: repeat(5, 15%);
     grid-template-rows: repeat(5, 300px);
-    grid-template-areas: 
-    "noti1 noti1 noti2 noti2 aside1" 
-    "noti1 noti1 noti2 noti2 aside2" 
-    "noti3 noti3 noti4 noti4 aside3" 
-    "noti3 noti3 noti4 noti4 aside4" 
-    "noti5 noti5 noti5 aside-v aside-v";
+    grid-template-areas: "noti1 noti1 noti2 noti2 aside1" "noti1 noti1 noti2 noti2 aside2" "noti3 noti3 noti4 noti4 aside3" "noti3 noti3 noti4 noti4 aside4" "noti5 noti5 noti5 aside-v aside-v";
     gap: 5px;
   }
   .local-grid section {
