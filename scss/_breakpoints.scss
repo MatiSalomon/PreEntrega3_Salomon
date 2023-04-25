@@ -457,12 +457,20 @@
             gap: 10px;
             section{
                 border: solid 2px rgb(82, 81, 67);
+                
                 p{
                     text-align: center;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 7;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    font-weight: $textLight;
                 }
                 h2{
                     text-decoration: underline;
                     overflow: hidden;
+                    font-size: $textMd;
+                    margin-top: 40px;
 
                 }
             } 
@@ -575,9 +583,11 @@
             text-shadow: 1px 1px 2px $secondaryColor, 0 0 1em $secondaryColor, 0 0 0.2em $secondaryColor;
         }
 
-        main h2{
-            text-align: center;
-        }
+        main{
+            h2{
+                text-align: center;
+            }
+        } 
         
         /* END Pagina principal */
     
@@ -593,15 +603,18 @@
             "noti3 noti4 noti5"
             "aside1 aside2 aside3"
             "aside4 aside-v aside-v";
-            gap: 10px;
+            gap: 7px;
             section{
                 p{
                     font-size: $textSm;
                     font-weight: $textLight;
                     text-align: center;
+                    overflow: hidden;
                 }
                 h2{
                     font-weight: $textBolt;
+                    font-size: $textMd;
+                    margin-top: 20px;
                 }
             }
             .aside4{
@@ -631,7 +644,7 @@
                     text-align: center;
                     font-weight: $textLight;
                     display: -webkit-box;
-                    -webkit-line-clamp: 4;
+                    -webkit-line-clamp: 3;
                     -webkit-box-orient: vertical;
                     overflow: hidden;
                     font-weight: $textLight;

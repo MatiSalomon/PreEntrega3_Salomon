@@ -684,10 +684,17 @@ footer h3 {
   }
   .main-grid section p {
     text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-weight: 400;
   }
   .main-grid section h2 {
     text-decoration: underline;
     overflow: hidden;
+    font-size: 1.4em;
+    margin-top: 40px;
   }
   .main-grid article {
     border: solid 2px rgb(82, 81, 67);
@@ -813,15 +820,18 @@ footer h3 {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(5, 250px) 300px;
     grid-template-areas: "noti1 noti1 noti2" "noti1 noti1 noti2" "noti3 noti4 noti5" "noti3 noti4 noti5" "aside1 aside2 aside3" "aside4 aside-v aside-v";
-    gap: 10px;
+    gap: 7px;
   }
   .local-grid section p {
     font-size: 1em;
     font-weight: 400;
     text-align: center;
+    overflow: hidden;
   }
   .local-grid section h2 {
     font-weight: 900;
+    font-size: 1.4em;
+    margin-top: 20px;
   }
   .local-grid .aside4 img {
     width: 50%;
@@ -849,7 +859,7 @@ footer h3 {
     text-align: center;
     font-weight: 400;
     display: -webkit-box;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     font-weight: 400;
